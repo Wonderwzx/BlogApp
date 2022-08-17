@@ -1,0 +1,115 @@
+2022-08-06 21:04:10.340  INFO 8633 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 8633 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-08-06 21:04:10.342 DEBUG 8633 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-08-06 21:04:10.344  INFO 8633 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-08-06 21:04:10.400  INFO 8633 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-06 21:04:10.401  INFO 8633 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-06 21:04:11.278  INFO 8633 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-06 21:04:11.364  INFO 8633 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 5 JPA repository interfaces.
+2022-08-06 21:04:12.305  INFO 8633 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-08-06 21:04:12.315  INFO 8633 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-06 21:04:12.317  INFO 8633 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-08-06 21:04:12.364  INFO 8633 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-06 21:04:12.366  INFO 8633 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1965 ms
+2022-08-06 21:04:12.563  INFO 8633 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-06 21:04:12.593  INFO 8633 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-08-06 21:04:12.702  INFO 8633 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-06 21:04:12.750  INFO 8633 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-06 21:04:12.751  WARN 8633 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-06 21:04:13.034  INFO 8633 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-06 21:04:13.048  INFO 8633 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-08-06 21:04:13.752  INFO 8633 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-06 21:04:13.759  INFO 8633 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-06 21:04:14.876  WARN 8633 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-06 21:04:15.072  INFO 8633 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-08-06 21:04:15.354  INFO 8633 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-06 21:04:15.390  INFO 8633 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-06 21:04:15.400  INFO 8633 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 5.542 seconds (JVM running for 6.348)
+2022-08-06 21:04:31.232  INFO 8633 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-06 21:04:31.234  INFO 8633 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-06 21:04:31.238  INFO 8633 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-08-06 21:04:31.290  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-08-06 21:04:31.429  WARN 8633 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-06 21:04:31.452  WARN 8633 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2022-08-06 21:04:31.461  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-08-06 21:04:31.461  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:04:36.806  INFO 8633 --- [http-nio-8080-exec-9] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[-1, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-08-06 21:04:36.851  INFO 8633 --- [http-nio-8080-exec-9] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-08-06 21:04:36.851  INFO 8633 --- [http-nio-8080-exec-9] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:04:36.918  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/12345', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[12345, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-08-06 21:04:36.933  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-08-06 21:04:36.933  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:04:38.219  INFO 8633 --- [http-nio-8080-exec-3] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-08-06 21:04:38.265  INFO 8633 --- [http-nio-8080-exec-3] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-08-06 21:04:38.265  INFO 8633 --- [http-nio-8080-exec-3] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:04:40.724  INFO 8633 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/blog/10', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.blog', args=[10, {}]}
+2022-08-06 21:04:40.844  INFO 8633 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : Result: blog
+2022-08-06 21:04:40.845  INFO 8633 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:04:53.651 ERROR 8633 --- [http-nio-8080-exec-9] c.w.b.h.ControllerExceptionHandler       : Request URL: http://localhost:8080/blog/10, Exception: {}
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:253)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:442)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:383)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:125)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:67)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:498)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1261)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1043)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-08-06 21:04:53.658  WARN 8633 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-08-06 21:05:01.889  INFO 8633 --- [http-nio-8080-exec-10] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/blog/10', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.blog', args=[10, {}]}
+2022-08-06 21:05:01.921  INFO 8633 --- [http-nio-8080-exec-10] com.wonder.blog.aspect.LogAspect         : Result: blog
+2022-08-06 21:05:01.921  INFO 8633 --- [http-nio-8080-exec-10] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:05:16.208  INFO 8633 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TagShowController.tags', args=[-1, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-08-06 21:05:16.281  INFO 8633 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : Result: tags
+2022-08-06 21:05:16.281  INFO 8633 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:05:16.338  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/tags/12345', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TagShowController.tags', args=[12345, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-08-06 21:05:16.352  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: tags
+2022-08-06 21:05:16.354  INFO 8633 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:05:17.229  INFO 8633 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[-1, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-08-06 21:05:17.253  INFO 8633 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-08-06 21:05:17.254  INFO 8633 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 21:05:17.320  INFO 8633 --- [http-nio-8080-exec-10] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/12345', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[12345, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-08-06 21:05:17.329  INFO 8633 --- [http-nio-8080-exec-10] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-08-06 21:05:17.329  INFO 8633 --- [http-nio-8080-exec-10] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-08-06 23:16:13.974  WARN 8633 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m59s987ms).
+2022-08-06 23:30:53.491  WARN 8633 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m9s497ms).

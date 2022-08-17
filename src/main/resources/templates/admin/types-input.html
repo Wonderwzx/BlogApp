@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Create a new type</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+    <link rel="stylesheet" href="../../static/css/self-defined.css" th:href="@{/css/self-defined.css}">
+</head>
+<body>
+    <!--navigation-->
+    <nav class="ui inverted segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Admin</h2>
+                <a href="#" class="item m-mobile-hide"><i class="home icon"></i>Blog</a>
+                <a href="#" class="active item m-mobile-hide"><i class="idea icon"></i>Classification</a>
+                <a href="#" class="item m-mobile-hide"><i class="tags icon"></i>Tags</a>
+                <div class="right menu">
+                    <div class="ui dropdown item">
+                        <div class="text">
+                            <img class="ui avatar image" src="https://unsplash.it/100/100?image=1005" th:src="@{${session.user.avatar}}">
+                            <span th:text="${session.user.nickname}">Zixin Wang</span>
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item">log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <div class="ui attached pointing menu">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" th:href="@{/admin/types/input}" class="teal active item">create</a>
+                <a href="#" th:href="@{/admin/types}" class="item">list</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!--middle content-->
+    <div class="m-container-small m-padded-tb-large">
+        <div class="ui container">
+            <form action="#" method="post" th:action="*{id}==null ? @{/admin/types} : @{/admin/types/{id}(id=*{id})}"  th:object="${type}" class="ui form">
+
+                <div class="required field">
+                    <div class="ui left labeled input">
+                        <label class="ui teal basic label">Type name</label>
+                        <input type="text" name="name" placeholder="type name">
+                    </div>
+                </div>
+
+                <div class="ui error message"></div>
+                <!-- /*/
+                <div class="ui negative message" th:if="${#fields.hasErrors('name')}">
+                    <i class="close icon"></i>
+                    <div class="header">Validation failed</div>
+                    <p th:errors="*{name}">Please check your information</p>
+                </div>
+                /*/-->
+                <div class="ui right aligned container">
+                    <button type="button" class="ui button" onclick="window.history.go(-1)">return</button>
+                    <button type="submit" class="ui submit teal button">submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <!--footer-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <img src="../../static/images/qrcode.png" th:src="@{/images/qrcode.png}" class="ui rounded image" alt="" style="width: 110px">
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Recent Blogs</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Contact me</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Zixin Wang</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">This is my own playground from scratch</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright 2022 Designed by Zixin Wang</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+
+
+    $('.menu.toggle').click(function(){
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+
+    $('.ui.form').form({
+        fields : {
+            title : {
+                identifier: 'name',
+                rules: [{
+                    type : 'empty',
+                    prompt: "Please input type name"
+                }]
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+2022-07-19 00:42:45.881  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m776ms).
+2022-07-19 00:59:32.206  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m16s264ms).
+2022-07-19 01:17:36.312  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m34s94ms).
+2022-07-19 01:34:16.907  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m10s580ms).
+2022-07-19 02:37:55.099  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m27s384ms).
+2022-07-19 03:40:30.317  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m4s399ms).
+2022-07-19 03:51:27.702  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m27s363ms).
+2022-07-19 04:54:53.890  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55s271ms).
+2022-07-19 05:00:46.679  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m52s794ms).
+2022-07-19 05:03:44.358  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m27s669ms).
+2022-07-19 06:19:18.915  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m33s713ms).
+2022-07-19 06:36:37.703  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m48s760ms).
+2022-07-19 07:53:02.344  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m53s760ms).
+2022-07-19 09:10:05.153  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m32s23ms).
+2022-07-19 09:27:25.685  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m50s519ms).
+2022-07-19 10:29:56.137  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m59s654ms).
+2022-07-19 10:32:23.827  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m57s675ms).
+2022-07-19 10:45:52.692  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m28s865ms).
+2022-07-19 11:49:11.094  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m47s592ms).
+2022-07-19 12:51:39.127  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m27s174ms).
+2022-07-19 12:54:14.685  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m35s561ms).
+2022-07-19 12:56:07.335  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m22s640ms).
+2022-07-19 14:09:18.113  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m9s961ms).
+2022-07-19 16:01:14.179  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m25s312ms).
+2022-07-19 16:15:31.930  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m17s752ms).
+2022-07-19 16:18:46.754  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m14s819ms).
+2022-07-19 16:26:18.827  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m32s73ms).
+2022-07-19 16:33:34.485  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m15s658ms).
+2022-07-19 16:50:45.072  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m10s586ms).
+2022-07-19 17:24:58.874  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m13s803ms).
+2022-07-19 17:41:37.205  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m38s331ms).
+2022-07-19 17:42:46.892  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s687ms).
+2022-07-19 17:47:29.252  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m42s360ms).
+2022-07-19 18:12:28.344  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m59s92ms).
+2022-07-19 18:13:17.161  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s816ms).
+2022-07-19 18:23:37.806  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m20s646ms).
+2022-07-19 18:24:47.865  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s59ms).
+2022-07-19 18:26:53.465  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m5s599ms).
+2022-07-19 19:00:03.075  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m9s611ms).
+2022-07-19 19:36:42.174  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s793ms).
+2022-07-19 19:42:54.910  INFO 95406 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-07-19 19:42:54.965  INFO 95406 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-19 19:42:54.967  INFO 95406 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:00.184  INFO 95406 --- [http-nio-8080-exec-3] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[-1, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-07-19 19:43:00.252  INFO 95406 --- [http-nio-8080-exec-3] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-07-19 19:43:00.252  INFO 95406 --- [http-nio-8080-exec-3] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:00.318  INFO 95406 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/12345', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[12345, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-07-19 19:43:00.344  INFO 95406 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-07-19 19:43:00.345  INFO 95406 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:05.503  INFO 95406 --- [http-nio-8080-exec-4] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[-1, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-07-19 19:43:05.521  INFO 95406 --- [http-nio-8080-exec-4] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-07-19 19:43:05.522  INFO 95406 --- [http-nio-8080-exec-4] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:05.599  INFO 95406 --- [http-nio-8080-exec-5] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/12345', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[12345, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-07-19 19:43:05.605  INFO 95406 --- [http-nio-8080-exec-5] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-07-19 19:43:05.605  INFO 95406 --- [http-nio-8080-exec-5] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:06.577  INFO 95406 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[Page request [number: 0, size 10, sort: updateTime: DESC], {}]}
+2022-07-19 19:43:06.606  INFO 95406 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-19 19:43:06.607  INFO 95406 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:07.338  INFO 95406 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[-1, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-07-19 19:43:07.351  INFO 95406 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-07-19 19:43:07.351  INFO 95406 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:07.409  INFO 95406 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/12345', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[12345, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-07-19 19:43:07.416  INFO 95406 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-07-19 19:43:07.418  INFO 95406 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:09.355  INFO 95406 --- [http-nio-8080-exec-5] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[-1, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-07-19 19:43:09.364  INFO 95406 --- [http-nio-8080-exec-5] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-07-19 19:43:09.364  INFO 95406 --- [http-nio-8080-exec-5] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 19:43:09.428  INFO 95406 --- [http-nio-8080-exec-6] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/types/12345', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.TypeShowController.types', args=[12345, Page request [number: 0, size 20, sort: UNSORTED], {}]}
+2022-07-19 19:43:09.438  INFO 95406 --- [http-nio-8080-exec-6] com.wonder.blog.aspect.LogAspect         : Result: types
+2022-07-19 19:43:09.438  INFO 95406 --- [http-nio-8080-exec-6] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-19 20:47:49.566  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m7s257ms).
+2022-07-19 21:07:04.213  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m14s515ms).
+2022-07-19 22:55:33.424  WARN 95406 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48m58s795ms).

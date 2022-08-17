@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Blog Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/typo.css">
+    <link rel="stylesheet" href="../static/lib/prism/prism.css">
+    <link rel="stylesheet" href="../static/css/self-defined.css">
+</head>
+<body>
+    <!--navigation-->
+    <nav th:replace="_fragments :: menu(1)" class="ui inverted segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="item m-mobile-hide"><i class="home icon"></i>Explore</a>
+                <a href="#" class="item m-mobile-hide"><i class="idea icon"></i>Classification</a>
+                <a href="#" class="item m-mobile-hide"><i class="tags icon"></i>Tags</a>
+                <a href="#" class="item m-mobile-hide"><i class="clone icon"></i>Timeline</a>
+                <a href="#" class="item m-mobile-hide"><i class="info icon"></i>About me</a>
+                <div class="right item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!--middle content-->
+    <div class="m-container-small m-padded-tb-large">
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="https://unsplash.it/100/100?image=1005" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                        <div class="content">
+                            <a href="#" class="header" th:text="${blog.user.nickname}">Zixin Wang</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd')}">2022-07-07</span>
+                    </div>
+                    <div class="item">
+                        <i class="eye icon"></i> <span th:text="${ blog.views}">2354</span>
+                    </div>
+                </div>
+            </div>
+            <!--image-->
+            <div class="ui attached segment">
+                <img src="https://unsplash.it/800/450?image=1006" th:src="@{${blog.firstPicture}}" alt="" class="ui fluid rounded image">
+            </div>
+            <!--content-->
+            <div class="ui attached segment">
+                <div class="ui right aligned segment">
+                    <div class="ui orange basic label" th:text="${blog.flag}">Origin</div>
+                </div>
+                <h2 class="ui centered aligned header" th:text="${blog.title}">Binary Search</h2>
+                <br>
+                <div id="content" class="typo typo-selection m-padded-lr-responsive m-padded-tb-large" th:utext="${blog.content}">
+                    <p>Paragraph 1 Pigs possess both apocrine and eccrine sweat glands, although the latter appear limited to the snout and dorsonasal areas.[5] Pigs, however, like other "hairless" mammals (e.g. elephants, rhinos, and mole-rats), do not use thermal sweat glands in cooling.[6] Pigs are also less able than many other mammals to dissipate heat from wet mucous membranes in the mouth through panting. Their thermoneutral zone is 16 to 22 °C (61 to 72 °F).[7] At higher temperatures, pigs lose heat by wallowing in mud or water via evaporative cooling, although it has been suggested that wallowing may serve other functions, such as protection from sunburn, ecto-parasite control, and scent-marking.[8]</p>
+                    <p>Paragraph 2 真的吗 看看中文的效果</p>
+                    <p>Paragraph 3</p>
+                    <pre><code class="language-css"> p { color : red }</code></pre>
+                    <p>Paragraph 4</p>
+                    <p>Paragraph 5</p>
+                </div>
+                <div class="m-padded-lr-responsive">
+                    <div class="ui basic teal left pointing label" th:each="tag : ${blog.tags}" th:text="${tag.name}">Binary Search</div>
+                </div>
+                <div class="ui center aligned basic segment">
+                    <button id="payButton" class="ui orange basic circular button">Contribute</button>
+                </div>
+                <div class="ui payQR flowing popup transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images">
+                            <div class="image">
+                                <img src="../static/images/qrcode.png" th:src="@{/images/qrcode.png}" alt="" class="ui rounded bordered image" style="width: 100px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--blog info-->
+            <div class="ui attached positive message">
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <li>Author:<span th:text="${blog.user.nickname}">Zixin Wang</span><a href="#" th:href="@{/about}" target="_blank">(Contact Author)</a> </li>
+                        <li>Time: <span th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd HH:mm')}">2022</span> </li>
+                    </div>
+                    <div class="five wide column">
+                        <img src="../static/images/qrcode.png" th:src="@{/images/qrcode.png}" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="ui bottom attached segment">
+                <!-- comment -->
+                <div id="comment-container" class="ui teal segment">
+                    <div th:fragment="commentList">
+                        <div class="ui threaded comments" style="max-width: 100%">
+                            <h3 class="ui dividing header">Comments</h3>
+                            <div class="comment" th:each="comment : ${comments}">
+                                <a class="avatar">
+                                    <img src="https://unsplash.it/200/200?image=1000" th:src="@{${comment.avatar}}">
+                                </a>
+                                <div class="content">
+                                    <a class="author">
+                                        <span th:text="${comment.nickname}">Matt</span>
+                                        <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${comment.adminComment}" >Blogger</div>
+                                    </a>
+                                    <div class="metadata">
+                                        <span class="date" th:text="${#dates.format(comment.createTime, 'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
+                                    </div>
+                                    <div class="text" th:text="${comment.content}">
+                                        How artistic!
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid={comment.id}, data-commentnickname=${comment.nickname}" onclick="reply(this)">Reply</a>
+                                    </div>
+                                </div>
+
+                                <div class="comments" th:if="${#arrays.length(comment.replyComments)>0}">
+                                    <div class="comment" th:each="reply : ${comment.replyComments}">
+                                        <a class="avatar">
+                                            <img src="https://unsplash.it/200/200?image=1000" th:src="@{${comment.avatar}}">
+                                        </a>
+                                        <div class="content">
+                                            <a class="author" th:text="${reply.nickname}">
+                                                <span th:text="${reply.nickname}">Matt</span>
+                                                <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${reply.adminComment}">Blogger</div>
+                                                &nbsp;<span th:text="|@ ${reply.parentComment.nickname}|" class="m-teal">@ Wonder</span>
+                                            </a>
+                                            <div class="metadata">
+                                                <span class="date" th:text="${#dates.format(reply.createTime, 'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
+                                            </div>
+                                            <div class="text" th:text="${reply.content}">
+                                                How artistic!
+                                            </div>
+                                            <div class="actions">
+                                                <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid={reply.id}, data-commentnickname=${reply.nickname}" onclick="reply(this)">Reply</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="comment-form" class="ui form">
+                    <input type="hidden" name="blog.id" th:value="${blog.id}">
+                    <input type="hidden" name="parentComment.id" value="-1">
+                    <div class="field">
+                        <textarea name="content" placeholder="Please input your comment"></textarea>
+                    </div>
+                    <div class="fields">
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="Name" th:value="${session.user}!=null ? ${session.user.nickname}">
+                            </div>
+                        </div>
+                        <div class="field m-mobile-wide m-margin-bottom-small">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" name="email" placeholder="Email" th:value="${session.user}!=null ? ${session.user.email}">
+                            </div>
+                        </div>
+                        <div class="field m-margin-bottom-small m-mobile-wide">
+                            <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide"><i class="edit icon"></i>Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-padded m-fixed m-right-bottom">
+        <div class="ui vertical icon buttons">
+<!--            <button type="button" class="ui teal button">Catalogue</button>-->
+<!--            <a href="#comment-container" class="ui teal button">Comment</a>-->
+            <a href="#" class="ui icon button"><i class="chevron up icon"></i></a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <!--footer-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <img src="../static/images/qrcode.png" th:src="@{/images/qrcode.png}" class="ui rounded image" alt="" style="width: 110px">
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Recent Blogs</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Contact me</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Zixin Wang</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">This is my own playground from scratch</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright 2022 Designed by Zixin Wang</p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
+    <script>
+    $('.menu.toggle').click(function(){
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('#payButton').popup({
+       popup : $('.payQR.popup'),
+        on : 'click',
+        position: 'bottom center'
+    });
+
+    $('.ui.form').form({
+        fields: {
+            title: {
+                identifier: 'content',
+                rules: [{
+                    type: 'empty',
+                    prompt: 'Please input your comment'
+                }]
+            },
+            content: {
+                identifier: 'nickname',
+                rules: [{
+                    type: 'empty',
+                    prompt: 'Please input your nickname'
+                }]
+            },
+            type: {
+                identifier: 'email',
+                rules: [{
+                    type: 'email',
+                    prompt: 'Please input your email'
+                }]
+            }
+        }
+    });
+
+    $(function () {
+        $("#comment-container").load(/*[[@{/comments/{id}(id=${blog.id})}]]*/"comments/6");
+    });
+
+    $('#commentpost-btn').click(function(){
+        var foo = $('.ui.form').form('validate form');
+        if(foo){
+            console.log('validation success');
+            postData();
+        }else{
+            console.log('validation fail');
+        }
+    });
+
+    function postData() {
+        $("#comment-container").load(/*[[@{/comments}]]*/"",{
+            "parentComment.id" : $("[name='parentComment.id']").val(),
+            "blog.id" : $("[name='blog.id']").val(),
+            "nickname": $("[name='nickname']").val(),
+            "email"   : $("[name='email']").val(),
+            "content" : $("[name='content']").val()
+        },function (responseTxt, statusTxt, xhr) {
+            // $(window).scrollTo($('#comment-container'),500);
+            clearContent();
+        });
+    }
+
+    function clearContent() {
+        $("[name='nickname']").val('');
+        $("[name='email']").val('');
+        $("[name='content']").val('');
+        $("[name='parentComment.id']").val(-1);
+        $("[name='content']").attr("placeholder", "Please input your comment...");
+    }
+
+    function reply(obj) {
+        var commentId = $(obj).data('commentid');
+        var commentNickname = $(obj).data('commentnickname');
+        $("[name='content']").attr("placeholder", "@"+commentNickname).focus();
+        $("[name='parentComment.id']").val(commentId);
+        // $(window).scrollTo($('#comment-form'),500);
+    }
+
+</script>
+</body>
+</html>

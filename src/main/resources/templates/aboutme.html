@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/self-defined.css">
+</head>
+<body>
+    <!--navigation-->
+    <nav class="ui inverted segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="item m-mobile-hide"><i class="home icon"></i>Explore</a>
+                <a href="#" class="item m-mobile-hide"><i class="idea icon"></i>Classification</a>
+                <a href="#" class="item m-mobile-hide"><i class="tags icon"></i>Tags</a>
+                <a href="#" class="item m-mobile-hide"><i class="clone icon"></i>Timeline</a>
+                <a href="#" class="active item m-mobile-hide"><i class="info icon"></i>About me</a>
+                <div class="right item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+    <!--middle content-->
+    <div class="m-container-small m-padded-tb-large">
+        <div class="container">
+            <div class="ui grid">
+                <div class="eleven wide column">
+                    <div class="ui segment">
+                        <img src="https://unsplash.it/660/500?image=888">
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">About me</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text">Hi everybody, this is Zixin Wang's playground. Feel free to look around and find something interesting!
+                            Appreciate your contribution to this blog! Have fun here !</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Programming</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Algorithm</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Data Structure</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Cornell</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Java</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Python</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">JavaScript</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Go</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Spring</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">React</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">Django</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">MySQL</div>
+                        <div class="ui orange basic left pointing label m-margin-tb-tiny">...</div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                        <a href="#" class="ui circular icon button"><i class="weixin icon"></i></a>
+                        <a href="#" class="ui circular icon button"><i class="linkedin icon"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <!--footer-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <img src="../static/images/qrcode.png" class="ui rounded image" alt="" style="width: 110px">
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Recent Blogs</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Contact me</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                        <a href="#" class="item">User Story</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">Zixin Wang</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">This is my own playground from scratch</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright 2022 Designed by Zixin Wang</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.menu.toggle').click(function(){
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+</script>
+</body>
+</html>

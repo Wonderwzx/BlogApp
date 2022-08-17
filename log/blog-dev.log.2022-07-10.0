@@ -1,0 +1,825 @@
+2022-07-10 19:29:50.868  INFO 10845 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 10845 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:29:50.869 DEBUG 10845 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:29:50.870  INFO 10845 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:29:50.943  INFO 10845 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 19:29:50.944  INFO 10845 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 19:29:51.642  INFO 10845 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:29:51.657  INFO 10845 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:29:52.473  INFO 10845 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:29:52.479  INFO 10845 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:29:52.479  INFO 10845 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:29:52.520  INFO 10845 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:29:52.520  INFO 10845 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1575 ms
+2022-07-10 19:29:52.675  INFO 10845 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:29:52.755  INFO 10845 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 19:29:52.839  INFO 10845 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 19:29:52.887  INFO 10845 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 19:29:52.888  WARN 10845 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:29:53.140  INFO 10845 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 19:29:53.151  INFO 10845 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:29:53.262  INFO 10845 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:29:53.267  INFO 10845 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:29:53.415  WARN 10845 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:29:53.688  INFO 10845 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:29:54.033  INFO 10845 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:29:54.076  INFO 10845 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:29:54.093  INFO 10845 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.654 seconds (JVM running for 4.209)
+2022-07-10 19:29:59.788  INFO 10845 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:29:59.789  INFO 10845 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:29:59.791  INFO 10845 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 19:29:59.882  INFO 10845 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/1/wzx', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[1, wzx]}
+2022-07-10 19:29:59.906  INFO 10845 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:29:59.907  INFO 10845 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:45:11.287  INFO 10845 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:45:11.294  INFO 10845 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 19:45:11.302  INFO 10845 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 19:45:15.340  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11096 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:45:15.340 DEBUG 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:45:15.341  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:45:15.404  INFO 11096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 19:45:15.404  INFO 11096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 19:45:16.121  INFO 11096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:45:16.135  INFO 11096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:45:16.982  INFO 11096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:45:16.988  INFO 11096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:45:16.988  INFO 11096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:45:17.027  INFO 11096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:45:17.027  INFO 11096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1622 ms
+2022-07-10 19:45:17.189  INFO 11096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:45:17.269  INFO 11096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 19:45:17.356  INFO 11096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 19:45:17.401  INFO 11096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 19:45:17.403  WARN 11096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:45:17.644  INFO 11096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 19:45:17.657  INFO 11096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:45:17.765  INFO 11096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:45:17.770  INFO 11096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:45:17.919  WARN 11096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:45:18.556  INFO 11096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:45:18.597  INFO 11096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:45:18.608  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.7 seconds (JVM running for 4.412)
+2022-07-10 19:45:23.903  INFO 11096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:45:23.904  INFO 11096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:45:23.908  INFO 11096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-10 19:45:27.713  INFO 11096 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:45:27.757  INFO 11096 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:45:27.757  INFO 11096 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:45:27.765 ERROR 11096 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "index": Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-07-10 19:45:27.769 ERROR 11096 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+
+2022-07-10 19:46:11.349  INFO 11096 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:46:11.353  INFO 11096 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 19:46:11.361  INFO 11096 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 19:46:11.654  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11096 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:46:11.655 DEBUG 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:46:11.656  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:46:11.902  INFO 11096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:46:11.913  INFO 11096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:46:12.044  INFO 11096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:46:12.046  INFO 11096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:46:12.046  INFO 11096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:46:12.060  INFO 11096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:46:12.060  INFO 11096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 395 ms
+2022-07-10 19:46:12.120  INFO 11096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:46:12.125  INFO 11096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-10 19:46:12.126  WARN 11096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:46:12.164  INFO 11096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-10 19:46:12.165  INFO 11096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:46:12.179  INFO 11096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:46:12.180  INFO 11096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:46:12.221  WARN 11096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:46:12.257  INFO 11096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:46:12.359  INFO 11096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:46:12.389  INFO 11096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:46:12.400  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 0.894 seconds (JVM running for 58.205)
+2022-07-10 19:46:12.412  INFO 11096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 19:46:13.829  INFO 11096 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:46:13.833  INFO 11096 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-10 19:46:13.847  INFO 11096 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-10 19:46:14.111  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11096 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:46:14.112 DEBUG 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:46:14.112  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:46:14.317  INFO 11096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:46:14.319  INFO 11096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:46:14.487  INFO 11096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:46:14.490  INFO 11096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:46:14.491  INFO 11096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:46:14.497  INFO 11096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:46:14.497  INFO 11096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 379 ms
+2022-07-10 19:46:14.551  INFO 11096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:46:14.554  INFO 11096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-07-10 19:46:14.554  WARN 11096 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:46:14.594  INFO 11096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-07-10 19:46:14.595  INFO 11096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:46:14.608  INFO 11096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:46:14.608  INFO 11096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:46:14.652  WARN 11096 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:46:14.822  INFO 11096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:46:14.974  INFO 11096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:46:14.986  INFO 11096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:46:14.991  INFO 11096 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 0.987 seconds (JVM running for 60.796)
+2022-07-10 19:46:14.993  INFO 11096 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 19:46:18.377  INFO 11096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:46:18.380  INFO 11096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:46:18.383  INFO 11096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 19:46:18.428  INFO 11096 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:46:18.441  INFO 11096 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:46:18.442  INFO 11096 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:47:51.327  INFO 11096 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:47:51.331  INFO 11096 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:47:51.332  INFO 11096 --- [http-nio-8080-exec-7] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:47:57.894  INFO 11096 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:47:57.897  INFO 11096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-07-10 19:47:57.911  INFO 11096 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-07-10 19:48:00.716  INFO 11182 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11182 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:48:00.717 DEBUG 11182 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:48:00.718  INFO 11182 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:48:00.772  INFO 11182 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 19:48:00.772  INFO 11182 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 19:48:01.472  INFO 11182 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:48:01.490  INFO 11182 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:48:02.304  INFO 11182 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:48:02.310  INFO 11182 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:48:02.310  INFO 11182 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:48:02.348  INFO 11182 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:48:02.348  INFO 11182 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1575 ms
+2022-07-10 19:48:02.507  INFO 11182 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:48:02.586  INFO 11182 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 19:48:02.673  INFO 11182 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 19:48:02.721  INFO 11182 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 19:48:02.723  WARN 11182 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:48:02.958  INFO 11182 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 19:48:02.971  INFO 11182 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:48:03.069  INFO 11182 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:48:03.074  INFO 11182 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:48:03.213  WARN 11182 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:48:03.481  INFO 11182 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:48:03.861  INFO 11182 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:48:03.896  INFO 11182 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:48:03.913  INFO 11182 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.609 seconds (JVM running for 4.17)
+2022-07-10 19:48:06.220  INFO 11182 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:48:06.223  INFO 11182 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:48:06.225  INFO 11182 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 19:48:06.279  INFO 11182 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:48:06.295  INFO 11182 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:48:06.295  INFO 11182 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:49:10.753  INFO 11182 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:49:10.758  INFO 11182 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 19:49:10.764  INFO 11182 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 19:49:13.363  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11199 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:49:13.363 DEBUG 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:49:13.364  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:49:13.418  INFO 11199 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 19:49:13.418  INFO 11199 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 19:49:14.125  INFO 11199 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:49:14.141  INFO 11199 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:49:14.989  INFO 11199 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:49:14.995  INFO 11199 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:49:14.995  INFO 11199 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:49:15.033  INFO 11199 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:49:15.033  INFO 11199 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1614 ms
+2022-07-10 19:49:15.186  INFO 11199 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:49:15.263  INFO 11199 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 19:49:15.349  INFO 11199 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 19:49:15.400  INFO 11199 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 19:49:15.401  WARN 11199 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:49:15.644  INFO 11199 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 19:49:15.656  INFO 11199 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:49:15.754  INFO 11199 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:49:15.759  INFO 11199 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:49:15.893  WARN 11199 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:49:16.176  INFO 11199 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:49:16.531  INFO 11199 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:49:16.570  INFO 11199 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:49:16.587  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.642 seconds (JVM running for 4.197)
+2022-07-10 19:49:19.967  INFO 11199 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:49:19.968  INFO 11199 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:49:19.970  INFO 11199 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 19:49:20.025  INFO 11199 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:49:20.044  INFO 11199 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:49:20.044  INFO 11199 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:50:46.113  INFO 11199 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:50:46.117  INFO 11199 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 19:50:46.124  INFO 11199 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 19:50:46.382  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11199 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:50:46.383 DEBUG 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:50:46.384  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:50:46.621  INFO 11199 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:50:46.633  INFO 11199 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:50:46.760  INFO 11199 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:50:46.763  INFO 11199 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:50:46.763  INFO 11199 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:50:46.770  INFO 11199 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:50:46.770  INFO 11199 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 378 ms
+2022-07-10 19:50:46.831  INFO 11199 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:50:46.835  INFO 11199 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-10 19:50:46.836  WARN 11199 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:50:46.872  INFO 11199 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-10 19:50:46.873  INFO 11199 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:50:46.888  INFO 11199 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:50:46.889  INFO 11199 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:50:46.928  WARN 11199 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:50:46.967  INFO 11199 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:50:47.065  INFO 11199 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:50:47.084  INFO 11199 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:50:47.096  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 0.843 seconds (JVM running for 94.708)
+2022-07-10 19:50:47.106  INFO 11199 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 19:50:48.523  INFO 11199 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:50:48.526  INFO 11199 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-10 19:50:48.541  INFO 11199 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-10 19:50:48.802  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11199 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:50:48.803 DEBUG 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:50:48.803  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:50:49.018  INFO 11199 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:50:49.020  INFO 11199 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:50:49.202  INFO 11199 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:50:49.206  INFO 11199 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:50:49.206  INFO 11199 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:50:49.216  INFO 11199 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:50:49.218  INFO 11199 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 409 ms
+2022-07-10 19:50:49.321  INFO 11199 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:50:49.327  INFO 11199 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-07-10 19:50:49.327  WARN 11199 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:50:49.369  INFO 11199 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-07-10 19:50:49.370  INFO 11199 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:50:49.384  INFO 11199 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:50:49.384  INFO 11199 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:50:49.436  WARN 11199 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:50:49.601  INFO 11199 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:50:49.742  INFO 11199 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:50:49.755  INFO 11199 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:50:49.759  INFO 11199 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 1.072 seconds (JVM running for 97.371)
+2022-07-10 19:50:49.760  INFO 11199 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 19:50:51.559  INFO 11199 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:50:51.565  INFO 11199 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:50:51.568  INFO 11199 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 19:50:51.607  INFO 11199 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:50:51.621  INFO 11199 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:50:51.622  INFO 11199 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:52:48.360  INFO 11199 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:52:48.366  INFO 11199 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:52:48.366  INFO 11199 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:53:31.361  INFO 11199 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:53:31.363  INFO 11199 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-07-10 19:53:31.378  INFO 11199 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-07-10 19:53:34.327  INFO 11293 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11293 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:53:34.328 DEBUG 11293 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:53:34.328  INFO 11293 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:53:34.409  INFO 11293 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 19:53:34.410  INFO 11293 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 19:53:35.081  INFO 11293 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:53:35.094  INFO 11293 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:53:35.873  INFO 11293 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:53:35.878  INFO 11293 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:53:35.878  INFO 11293 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:53:35.918  INFO 11293 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:53:35.918  INFO 11293 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1508 ms
+2022-07-10 19:53:36.132  INFO 11293 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:53:36.209  INFO 11293 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 19:53:36.296  INFO 11293 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 19:53:36.344  INFO 11293 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 19:53:36.346  WARN 11293 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:53:36.591  INFO 11293 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 19:53:36.604  INFO 11293 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:53:36.702  INFO 11293 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:53:36.707  INFO 11293 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:53:36.853  WARN 11293 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:53:37.124  INFO 11293 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:53:37.475  INFO 11293 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:53:37.512  INFO 11293 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:53:37.528  INFO 11293 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.606 seconds (JVM running for 4.32)
+2022-07-10 19:53:57.581  INFO 11293 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:53:57.584  INFO 11293 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:53:57.588  INFO 11293 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-10 19:53:57.659  INFO 11293 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:53:57.677  INFO 11293 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:53:57.678  INFO 11293 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:57:59.418  INFO 11293 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:57:59.422  INFO 11293 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:57:59.422  INFO 11293 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:58:04.354  INFO 11293 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:58:04.359  INFO 11293 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 19:58:04.366  INFO 11293 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 19:58:07.364  INFO 11360 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11360 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:58:07.365 DEBUG 11360 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:58:07.365  INFO 11360 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:58:07.419  INFO 11360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 19:58:07.419  INFO 11360 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 19:58:08.123  INFO 11360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:58:08.140  INFO 11360 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:58:09.014  INFO 11360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:58:09.020  INFO 11360 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:58:09.021  INFO 11360 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:58:09.060  INFO 11360 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:58:09.061  INFO 11360 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1642 ms
+2022-07-10 19:58:09.221  INFO 11360 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:58:09.304  INFO 11360 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 19:58:09.390  INFO 11360 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 19:58:09.446  INFO 11360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 19:58:09.447  WARN 11360 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:58:09.690  INFO 11360 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 19:58:09.701  INFO 11360 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:58:09.798  INFO 11360 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:58:09.804  INFO 11360 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:58:09.945  WARN 11360 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:58:10.225  INFO 11360 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:58:10.578  INFO 11360 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:58:10.613  INFO 11360 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:58:10.629  INFO 11360 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.692 seconds (JVM running for 4.243)
+2022-07-10 19:58:13.347  INFO 11360 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:58:13.348  INFO 11360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:58:13.350  INFO 11360 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 19:58:13.407  INFO 11360 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:58:13.424  INFO 11360 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:58:13.424  INFO 11360 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 19:59:47.013  INFO 11360 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:59:47.018  INFO 11360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 19:59:47.023  INFO 11360 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 19:59:49.964  INFO 11388 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11388 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 19:59:49.965 DEBUG 11388 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 19:59:49.965  INFO 11388 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 19:59:50.019  INFO 11388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 19:59:50.020  INFO 11388 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 19:59:50.728  INFO 11388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 19:59:50.742  INFO 11388 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-07-10 19:59:51.553  INFO 11388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 19:59:51.559  INFO 11388 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 19:59:51.559  INFO 11388 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 19:59:51.597  INFO 11388 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 19:59:51.598  INFO 11388 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1578 ms
+2022-07-10 19:59:51.755  INFO 11388 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 19:59:51.834  INFO 11388 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 19:59:51.919  INFO 11388 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 19:59:51.971  INFO 11388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 19:59:51.972  WARN 11388 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 19:59:52.219  INFO 11388 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 19:59:52.231  INFO 11388 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 19:59:52.327  INFO 11388 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 19:59:52.333  INFO 11388 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 19:59:52.476  WARN 11388 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 19:59:52.745  INFO 11388 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 19:59:53.097  INFO 11388 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 19:59:53.132  INFO 11388 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 19:59:53.149  INFO 11388 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.598 seconds (JVM running for 4.17)
+2022-07-10 19:59:56.249  INFO 11388 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 19:59:56.250  INFO 11388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 19:59:56.252  INFO 11388 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 19:59:56.307  INFO 11388 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 19:59:56.325  INFO 11388 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 19:59:56.325  INFO 11388 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 20:01:45.997  INFO 11388 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 20:01:46.004  INFO 11388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 20:01:46.011  INFO 11388 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 20:01:48.780  INFO 11411 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11411 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 20:01:48.781 DEBUG 11411 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 20:01:48.781  INFO 11411 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 20:01:48.829  INFO 11411 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 20:01:48.830  INFO 11411 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 20:01:49.525  INFO 11411 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 20:01:49.539  INFO 11411 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-07-10 20:01:50.358  INFO 11411 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 20:01:50.364  INFO 11411 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 20:01:50.364  INFO 11411 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 20:01:50.402  INFO 11411 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 20:01:50.402  INFO 11411 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1572 ms
+2022-07-10 20:01:50.558  INFO 11411 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 20:01:50.637  INFO 11411 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 20:01:50.722  INFO 11411 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 20:01:50.771  INFO 11411 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 20:01:50.772  WARN 11411 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 20:01:51.016  INFO 11411 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 20:01:51.032  INFO 11411 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 20:01:51.130  INFO 11411 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 20:01:51.135  INFO 11411 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 20:01:51.274  WARN 11411 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 20:01:51.547  INFO 11411 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 20:01:51.899  INFO 11411 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 20:01:51.934  INFO 11411 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 20:01:51.945  INFO 11411 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.592 seconds (JVM running for 4.161)
+2022-07-10 20:01:57.351  INFO 11411 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 20:01:57.353  INFO 11411 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 20:01:57.356  INFO 11411 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 20:01:57.412  INFO 11411 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 20:01:57.428  INFO 11411 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 20:01:57.428  INFO 11411 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 20:34:17.172  WARN 11411 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m55s836ms).
+2022-07-10 20:52:26.865  WARN 11411 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m39s711ms).
+2022-07-10 21:05:22.337  WARN 11411 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m55s472ms).
+2022-07-10 21:16:32.407  INFO 11411 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:16:32.413  INFO 11411 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 21:16:32.431  INFO 11411 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 21:16:35.334  INFO 11909 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11909 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:16:35.335 DEBUG 11909 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:16:35.335  INFO 11909 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:16:35.401  INFO 11909 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 21:16:35.402  INFO 11909 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 21:16:36.100  INFO 11909 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:16:36.113  INFO 11909 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:16:36.928  INFO 11909 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:16:36.934  INFO 11909 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:16:36.935  INFO 11909 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:16:36.974  INFO 11909 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:16:36.975  INFO 11909 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1573 ms
+2022-07-10 21:16:37.138  INFO 11909 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:16:37.218  INFO 11909 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 21:16:37.305  INFO 11909 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 21:16:37.356  INFO 11909 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 21:16:37.359  WARN 11909 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:16:37.600  INFO 11909 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 21:16:37.611  INFO 11909 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:16:37.710  INFO 11909 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:16:37.715  INFO 11909 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:16:37.861  WARN 11909 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:16:38.144  INFO 11909 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:16:38.507  INFO 11909 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:16:38.543  INFO 11909 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:16:38.561  INFO 11909 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.657 seconds (JVM running for 4.357)
+2022-07-10 21:16:43.490  INFO 11909 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 21:16:43.491  INFO 11909 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 21:16:43.494  INFO 11909 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-10 21:16:43.569  INFO 11909 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 21:16:43.583  INFO 11909 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 21:16:43.584  INFO 11909 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 21:21:30.639  INFO 11909 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:21:30.651  INFO 11909 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 21:21:30.660  INFO 11909 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 21:21:33.471  INFO 11974 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 11974 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:21:33.472 DEBUG 11974 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:21:33.473  INFO 11974 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:21:33.529  INFO 11974 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 21:21:33.529  INFO 11974 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 21:21:34.245  INFO 11974 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:21:34.258  INFO 11974 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:21:35.050  INFO 11974 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:21:35.055  INFO 11974 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:21:35.056  INFO 11974 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:21:35.094  INFO 11974 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:21:35.095  INFO 11974 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1565 ms
+2022-07-10 21:21:35.251  INFO 11974 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:21:35.329  INFO 11974 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 21:21:35.413  INFO 11974 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 21:21:35.462  INFO 11974 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 21:21:35.464  WARN 11974 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:21:35.701  INFO 11974 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 21:21:35.712  INFO 11974 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:21:35.817  INFO 11974 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:21:35.822  INFO 11974 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:21:35.964  WARN 11974 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:21:36.236  INFO 11974 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:21:36.595  INFO 11974 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:21:36.630  INFO 11974 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:21:36.650  INFO 11974 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.599 seconds (JVM running for 4.187)
+2022-07-10 21:21:40.744  INFO 11974 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 21:21:40.745  INFO 11974 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 21:21:40.748  INFO 11974 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-10 21:21:40.806  INFO 11974 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 21:21:40.824  INFO 11974 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 21:21:40.824  INFO 11974 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 21:26:40.267  INFO 11974 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:26:40.273  INFO 11974 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 21:26:40.281  INFO 11974 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 21:26:43.163  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 12044 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:26:43.164 DEBUG 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:26:43.164  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:26:43.219  INFO 12044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 21:26:43.219  INFO 12044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 21:26:44.056  INFO 12044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:26:44.076  INFO 12044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:26:44.894  INFO 12044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:26:44.901  INFO 12044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:26:44.901  INFO 12044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:26:44.948  INFO 12044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:26:44.949  INFO 12044 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1730 ms
+2022-07-10 21:26:45.104  INFO 12044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:26:45.184  INFO 12044 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 21:26:45.269  INFO 12044 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 21:26:45.321  INFO 12044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 21:26:45.323  WARN 12044 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:26:45.563  INFO 12044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 21:26:45.575  INFO 12044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:26:45.678  INFO 12044 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:26:45.682  INFO 12044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:26:45.829  WARN 12044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:26:46.111  INFO 12044 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:26:46.478  INFO 12044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:26:46.511  INFO 12044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:26:46.522  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.783 seconds (JVM running for 4.344)
+2022-07-10 21:26:50.840  INFO 12044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 21:26:50.842  INFO 12044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 21:26:50.846  INFO 12044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-10 21:26:50.916  INFO 12044 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 21:26:50.936  INFO 12044 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 21:26:50.936  INFO 12044 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 21:34:21.861  INFO 12044 --- [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:34:21.866  INFO 12044 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 21:34:21.878  INFO 12044 --- [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 21:34:22.208  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 12044 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:34:22.211 DEBUG 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:34:22.212  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:34:22.475  INFO 12044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:34:22.483  INFO 12044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:34:22.625  INFO 12044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:34:22.628  INFO 12044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:34:22.628  INFO 12044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:34:22.638  INFO 12044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:34:22.639  INFO 12044 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 416 ms
+2022-07-10 21:34:22.679  INFO 12044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:34:22.683  INFO 12044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-10 21:34:22.683  WARN 12044 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:34:22.720  INFO 12044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-10 21:34:22.721  INFO 12044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:34:22.736  INFO 12044 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:34:22.737  INFO 12044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:34:22.777  WARN 12044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:34:22.815  INFO 12044 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:34:22.909  INFO 12044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:34:22.931  INFO 12044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:34:22.944  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 0.891 seconds (JVM running for 460.787)
+2022-07-10 21:34:22.954  INFO 12044 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 21:34:24.390  INFO 12044 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:34:24.393  INFO 12044 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-10 21:34:24.412  INFO 12044 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-10 21:34:24.772  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 12044 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:34:24.774 DEBUG 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:34:24.774  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:34:25.014  INFO 12044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:34:25.019  INFO 12044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:34:25.186  INFO 12044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:34:25.188  INFO 12044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:34:25.189  INFO 12044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:34:25.197  INFO 12044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:34:25.198  INFO 12044 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 411 ms
+2022-07-10 21:34:25.239  INFO 12044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:34:25.242  INFO 12044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-07-10 21:34:25.242  WARN 12044 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:34:25.281  INFO 12044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-07-10 21:34:25.281  INFO 12044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:34:25.294  INFO 12044 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:34:25.295  INFO 12044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:34:25.339  WARN 12044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:34:25.482  INFO 12044 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:34:25.628  INFO 12044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:34:25.642  INFO 12044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:34:25.647  INFO 12044 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 0.988 seconds (JVM running for 463.489)
+2022-07-10 21:34:25.648  INFO 12044 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 21:34:27.102  INFO 12044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 21:34:27.107  INFO 12044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 21:34:27.110  INFO 12044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 21:34:27.136  INFO 12044 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 21:34:27.147  INFO 12044 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 21:34:27.147  INFO 12044 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 21:35:29.002  INFO 12044 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:35:29.005  INFO 12044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-07-10 21:35:29.023  INFO 12044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-07-10 21:35:31.826  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 12192 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:35:31.827 DEBUG 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:35:31.827  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:35:31.879  INFO 12192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-10 21:35:31.879  INFO 12192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-10 21:35:32.691  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:35:32.708  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:35:33.536  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:35:33.542  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:35:33.543  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:35:33.586  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:35:33.586  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1707 ms
+2022-07-10 21:35:33.744  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:35:33.825  INFO 12192 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-10 21:35:33.910  INFO 12192 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-10 21:35:33.962  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-10 21:35:33.963  WARN 12192 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:35:34.203  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-10 21:35:34.216  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:35:34.312  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:35:34.317  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:35:34.452  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:35:34.726  INFO 12192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:35:35.080  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:35:35.125  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:35:35.142  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 3.757 seconds (JVM running for 4.319)
+2022-07-10 21:36:12.303  INFO 12192 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:36:12.308  INFO 12192 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-10 21:36:12.316  INFO 12192 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-10 21:36:12.588  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 12192 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:36:12.589 DEBUG 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:36:12.590  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:36:12.860  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:36:12.866  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:36:12.987  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:36:12.990  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:36:12.990  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:36:12.997  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:36:12.997  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 402 ms
+2022-07-10 21:36:13.045  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:36:13.048  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-10 21:36:13.049  WARN 12192 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:36:13.085  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-10 21:36:13.086  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:36:13.103  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:36:13.104  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:36:13.132  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:36:13.180  INFO 12192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:36:13.267  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:36:13.288  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:36:13.300  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 0.828 seconds (JVM running for 42.478)
+2022-07-10 21:36:13.313  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 21:36:14.751  INFO 12192 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:36:14.754  INFO 12192 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-10 21:36:14.771  INFO 12192 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-10 21:36:15.019  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 12192 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:36:15.022 DEBUG 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:36:15.022  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:36:15.215  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:36:15.217  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:36:15.388  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:36:15.390  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:36:15.391  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:36:15.397  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:36:15.397  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 369 ms
+2022-07-10 21:36:15.448  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:36:15.451  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-07-10 21:36:15.451  WARN 12192 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:36:15.490  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-07-10 21:36:15.490  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:36:15.503  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:36:15.504  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:36:15.551  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:36:15.723  INFO 12192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:36:15.897  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:36:15.913  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:36:15.928  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 1.013 seconds (JVM running for 45.106)
+2022-07-10 21:36:15.930  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 21:36:21.637  INFO 12192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 21:36:21.638  INFO 12192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 21:36:21.642  INFO 12192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-10 21:36:21.721  INFO 12192 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 21:36:21.745  INFO 12192 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 21:36:21.746  INFO 12192 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 21:39:08.735  INFO 12192 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 21:39:08.741  INFO 12192 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 21:39:08.741  INFO 12192 --- [http-nio-8080-exec-2] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 21:47:56.378  INFO 12192 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:47:56.385  INFO 12192 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-07-10 21:47:56.398  INFO 12192 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-07-10 21:47:56.743  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 12192 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:47:56.744 DEBUG 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:47:56.745  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:47:56.971  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:47:56.977  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:47:57.151  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:47:57.155  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:47:57.155  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:47:57.164  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:47:57.166  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
+2022-07-10 21:47:57.215  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:47:57.219  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-07-10 21:47:57.219  WARN 12192 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:47:57.269  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-07-10 21:47:57.270  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:47:57.282  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:47:57.283  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:47:57.328  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:47:57.468  INFO 12192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:47:57.623  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:47:57.635  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:47:57.639  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 1.051 seconds (JVM running for 746.831)
+2022-07-10 21:47:57.640  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 21:47:59.091  INFO 12192 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:47:59.096  INFO 12192 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-07-10 21:47:59.124  INFO 12192 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-07-10 21:47:59.392  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_332 on ouazusas-MBP.lan with PID 12192 (/Users/wonder/Desktop/Program/JavaEE_Notes/blog_app/target/classes started by wonder in /Users/wonder/Desktop/Program/JavaEE_Notes/blog_app)
+2022-07-10 21:47:59.394 DEBUG 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Running with Spring Boot v2.7.1, Spring v5.3.21
+2022-07-10 21:47:59.395  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : The following 1 profile is active: "dev"
+2022-07-10 21:47:59.574  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-10 21:47:59.581  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+2022-07-10 21:47:59.722  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-10 21:47:59.725  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-10 21:47:59.726  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-10 21:47:59.733  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-10 21:47:59.734  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 332 ms
+2022-07-10 21:47:59.772  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-10 21:47:59.775  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-07-10 21:47:59.775  WARN 12192 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-10 21:47:59.820  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-07-10 21:47:59.821  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-07-10 21:47:59.832  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-10 21:47:59.832  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-10 21:47:59.864  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-10 21:47:59.976  INFO 12192 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-10 21:48:00.110  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-10 21:48:00.119  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-10 21:48:00.123  INFO 12192 --- [restartedMain] com.wonder.blog.BlogApplication          : Started BlogApplication in 0.846 seconds (JVM running for 749.314)
+2022-07-10 21:48:00.123  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-10 21:48:06.806  INFO 12192 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-10 21:48:06.812  INFO 12192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-10 21:48:06.815  INFO 12192 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-10 21:48:06.829  INFO 12192 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.index', args=[]}
+2022-07-10 21:48:06.840  INFO 12192 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : Result: index
+2022-07-10 21:48:06.842  INFO 12192 --- [http-nio-8080-exec-1] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 21:48:18.256  INFO 12192 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Request: {url='http://localhost:8080/blog', ip='0:0:0:0:0:0:0:1', classMethod='com.wonder.blog.web.IndexController.blog', args=[]}
+2022-07-10 21:48:18.261  INFO 12192 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : Result: blog
+2022-07-10 21:48:18.262  INFO 12192 --- [http-nio-8080-exec-8] com.wonder.blog.aspect.LogAspect         : -----doAfter-----
+2022-07-10 22:55:09.758  WARN 12192 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=16m38s888ms).
+2022-07-10 23:11:36.267  WARN 12192 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=16m26s510ms).
+2022-07-10 23:17:47.889  WARN 12192 --- [HikariPool-5 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=5m41s618ms).
